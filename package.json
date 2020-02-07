@@ -1,0 +1,39 @@
+{
+  "name": "hooking-git",
+  "version": "1.0.0",
+  "description": "Git hooks installer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigBl4ckW0lf/hooking-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigBl4ckW0lf/hooking-git/issues"
+  },
+  "author": "Daniel Weiß <96er.daniel.weiss@gmail.com>",
+  "engines": {
+    "node": ">= 8.16"
+  },
+  "keywords": [
+    "git",
+    "hooks",
+    "hook",
+    "prepush",
+    "pre-push",
+    "pre-commit",
+    "precommit",
+    "post-merge",
+    "postmerge"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "postinstall": "node installer.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
+}
